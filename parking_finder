@@ -1,0 +1,15 @@
+"""
+Parking finder for meter reading routes
+
+Queries OpenStreetMap via the Overpass API to find parking candidates
+near a route, then scores them on walking coverage, route start
+proximity, access type, and parking reliability.
+
+Helper functions imported by route_analyser.ipynb after the reads are loaded.
+"""
+
+import json
+import os
+import pandas as pd
+import requests
+
